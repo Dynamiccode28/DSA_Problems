@@ -86,7 +86,7 @@ void Array::Reverse1(){//single array sufficient
 		cout<<A[j]<<ends;
 	}
 }
-void Array::Reverse(){
+void Array::Reverse(){//reverse using extra space
 	int *B;
 	int i,j;
 	B=new int [length];
@@ -117,7 +117,7 @@ int Array::Set(int index,int num){
 		A[index]=num;
 	}
 }
-int Array::Max(){
+int Array::Max(){//finding maximum
 	int max=A[0];
 	for(int i=1;i<length;i++){
 		if(A[i]>max){
@@ -126,7 +126,7 @@ int Array::Max(){
 	}
 	return max;
 }
-int Array::Min(){
+int Array::Min(){//fiinding minimum
 	int min=A[0];
 	for(int i=1;i<length;i++){
 		if(A[i]<min){
@@ -156,7 +156,7 @@ int Array::Delete(int index){
 	}
 	
 }
-void transposition(int *x,int *y){
+void transposition(int *x,int *y){//improving linear search
 	int temp;
 	temp=*x;
 	*x=*y;
