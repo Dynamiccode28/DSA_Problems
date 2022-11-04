@@ -1,5 +1,5 @@
 #include <bits/stdc++.h> 
-string binaryShopping(string S, int P)
+string binaryShopping(string S, int P)//bits
 {
     int cnt=0,n=S.size();
     for(int i=1;i<=n&& cnt<2;i++){
