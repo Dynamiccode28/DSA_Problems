@@ -3,6 +3,7 @@ public:
     
     int getPairsCount(int arr[], int n, int k) {
         // code here
+        //counting pairs with given sum
         unordered_map<int,int>ans;
         int cnt=0;
         for(int i=0;i<n;i++){
